@@ -1,0 +1,63 @@
+\documentclass{article}
+
+\author{Mukaumba.J.Comfort}
+\title{Computer Graphics}
+\date{\today}
+
+\begin{document}
+
+\maketitle
+
+\section{Section A (Q1) [10 points]}
+\subsection{a}Which of the following is NOT a primary color in the RGB color model(Red,Green,Blue and Yellow)?\par
+\underline{Yellow}
+
+\subsection{b}When light travels from air into water, it generally does what?\par
+\underline{Slows down and bends toward the normal.}
+
+\subsection{c}In ray tracing,what is the term used to describe the process of determing which objects in the scene are visible from a specific point of viem?\par
+\underline{Ray intersection}
+
+\subsection{d}Which rendering technique is primarily used to simulate the way light interacts with translucent materials such as glass or water?\\
+\underline{Reflection.}
+
+\subsection{e}What does the term "keyframe" refer to in animation?\\
+\underline{A frame that defines the start or end of a motion sequences.}
+
+\subsection{Q2(a)RAY TRACING AND ANIMATION [12 points]}Briefly explain the concept of specular reflection and provide an example of real-world situation where it occurs?\\
+Specular reflection is a type of reflection that occurs when light rays strikes a smooth surface and bounce off in a predictable and organised manner.\\
+It is characterized by a mirror-like reflection,where the incident angle of the light rays equals the reflected angle.\\
+\textbf{Example of Specular Reflection:}\\
+Reflection of light on a calm body of water,such as a lake or a pond.When Sunlight or any other light source shines on the water surface, the smooth water acts as a mirror,reflecting the light rays in a clear reflection of the surronding environment on the water's surface,where the angle of incidence equals the angle of reflection.
+
+\subsection{b}Define "ray tracing" and "ray casting" in the context of Computer Graphics?\\ Explain how they differ?\\
+\underline{Ray Casting:}is a relatively simpler technique.It involves casting a primary ray through each pixel on the screen and checking for intersections with objects in the scene.\\
+By determing the closest intersectionpoint, the color or properties of the object at that can be calculated and assigned to the corresponding pixel on the screen.\\
+\underline{Ray Tracing:}is a more advanced and computationally intensive technique that aims to simulate the behavior of light in a scene with greater realism.\\
+\textbf{Differences Between Ray Casting And Ray Tracing:}\par
+\underline{Ray Casting:}Can simulate complete lighting effects,including realistic reflections,refractions,shadows and global illumination.\par
+\underline{Ray Tracing:}On the other hand,is more sophisticated approach that simulates the path of light rays,allowing more realistic renderingwith advanced lighting effects.  
+
+\subsection{c}Describe the term "Interpolation" as it relates to animation and its impotarnce in creating smooth motion?\par
+\underline{Interpolation:}is the process of generating intermediate frames between two keyframes to create smooth motion.\\
+It involves calculating the values of attributes(such as position,rotation,scale or color)at a specific point in time.\\
+\underline{The Impotarnce Of Interpolation Is:}\\
+\begin{itemize}
+    \item To achieve fuild and seamless motion between key poses or keyframes.
+    \item It automatically calculates the in-between frames, where interpolation helps to create the illusion of continuous movement and natural transitions.
+\end{itemize}
+
+\subsection{Q3 PROBLEM-SOLVING RAY OF LIGHT(SNELL'S LAW) [10 points]}Consider a ray tracing scenario where a ray of light travels from air(n = 1.00) into a glass block(1.50).The incident angle is 30 degrees,calculate the angle of refraction using snell's law?(Show your working).\\
+Fisrt,we need to convert the incident angle from degrees to radians.\\The formula to use when converting degrees to radians is given as:\\
+radians = degrees*(thetha/180 degrees).\par
+converting 30 degrees to radians: 01(incident angle) = 30*(thetha/180) which gives:\underline{0.5236 radians.}\par
+Now,we can use the snell's law to calculate the angle of refraction(using the formula n1(sin(1)) = n2(sin(2))):\par
+Plugging in the values:1.00 * sin(0.5236) = 1.50 * sin(2)\\
+So, we can solve for 2 by rearranging the equation:\par
+sin(2) = (n1/n2)*sin(1)\par
+sin(2) = (1.00/1.50)*sin(0.5236)\\
+So,sin(2) =\underline{0.6667}\\
+Now,we can find the value of 2 by taking the inverse sine(arcsine) of the value we obtained:\\
+So value of 2 = arcsine(0.6667) giving:\underline{41.81 degrees.}\\
+Therefore, the angle of refraction when a ray of light travels from air(refractive index 1.00) into a glass block(refractive index 1.50) with an incident angle of 30 degrees is approximately to:\underline{41.81 degrees.} 
+\end{document}
